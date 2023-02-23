@@ -1,9 +1,9 @@
 <?php
 // Conexión a la base de datos
-$host = "localhost";
-$user = "root";
-$password = "1794";
-$database = "formulario";
+$host = "bolrprnzgdvkwxpk7fhi-mysql.services.clever-cloud.com";
+$user = "ua4jnmnsehoxqwsz";
+$password = "4zj7R2ajlJ57j8dP8tFz";
+$database = "bolrprnzgdvkwxpk7fhi";
 
 
 $conn = mysqli_connect($host, $user, $password, $database);
