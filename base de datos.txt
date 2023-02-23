@@ -1,0 +1,13 @@
+  
+                 base de datos formulario
+
+CREATE TABLE respuestas (
+  id INT PRIMARY KEY AUTO_INCREMENT,
+  nombre VARCHAR(50) NOT NULL,
+  email VARCHAR(50) NOT NULL,
+  edad INT NOT NULL,
+  genero VARCHAR(10) NOT NULL,
+  pregunta1 VARCHAR(20) NOT NULL,
+  pregunta2 VARCHAR(100) NOT NULL,
+  pregunta3 TEXT NOT NULL
+);

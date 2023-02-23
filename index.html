@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formulario de Preguntas</title>
+</head>
+<link rel="stylesheet" href="css.css">
+l
+<body>
+	<h2>Formulario de Preguntas</h2>
+	<form action="./php.php" method="post">
+		<label for="nombre">Nombre:</label>
+		<input type="text" id="nombre" name="nombre" required><br><br>
+		
+		<label for="email">Correo electronico:</label>
+		<input type="email" id="email" name="email" required><br><br>
+		
+		<label for="edad">Edad:</label>
+		<input type="number" id="edad" name="edad" min="18" max="99" required><br><br>
+		
+		<label for="genero">Genero:</label>
+		<select id="genero" name="genero" required>
+			<option value="">Seleccione una opcion</option>
+			<option value="M">Masculino</option>
+			<option value="F">Femenino</option>
+			<option value="O">Otro</option>
+		</select><br><br>
+		
+		<label for="pregunta1">Cual es su color favorito</label><br>
+		<input type="radio" id="pregunta1a" name="pregunta1" value="rojo">
+		<label for="pregunta1a">Rojo</label><br>
+		<input type="radio" id="pregunta1b" name="pregunta1" value="verde">
+		<label for="pregunta1b">Verde</label><br>
+		<input type="radio" id="pregunta1c" name="pregunta1" value="azul">
+		<label for="pregunta1c">Azul</label><br><br>
+		
+		<label for="pregunta2">Cual es su animal favorito</label><br>
+		<input type="checkbox" id="pregunta2a" name="pregunta2[]" value="perro">
+		<label for="pregunta2a">Perro</label><br>
+		<input type="checkbox" id="pregunta2b" name="pregunta2[]" value="gato">
+		<label for="pregunta2b">Gato</label><br>
+		<input type="checkbox" id="pregunta2c" name="pregunta2[]" value="pez">
+		<label for="pregunta2c">Pez</label><br>
+		<input type="checkbox" id="pregunta2d" name="pregunta2[]" value="otro">
+		<label for="pregunta2d">Otro</label><br><br>
+		
+		<label for="pregunta3">Cual es su pasatiempo favorito</label><br>
+		<textarea id="pregunta3" name="pregunta3" rows="4" cols="50" required></textarea><br><br>
+		
+		<input type="submit" value="Enviar respuestas">
+	</form>
+</body>
+</html>
