@@ -22,7 +22,7 @@ $pregunta2 = implode(", ", $_POST["pregunta2"]);
 $pregunta3 = $_POST["pregunta3"];
 
 // Insertar datos en la tabla respuestas
-$sql = "INSERT INTO  `formulario`.`respuestas` (nombre, email, edad, genero, pregunta1, pregunta2, pregunta3)
+$sql = "INSERT INTO  `bolrprnzgdvkwxpk7fhi`.`respuestas` (nombre, email, edad, genero, pregunta1, pregunta2, pregunta3)
         VALUES ('$nombre', '$email', $edad, '$genero', '$pregunta1', '$pregunta2', '$pregunta3')";
 
 if (mysqli_query($conn, $sql)) {
